@@ -13,9 +13,9 @@ function takeANumber(KatzDeliLine,name) {
 //   else {
 //     return `Currently serving ${KatzDeliLine.shift()}.`}
 // }
-let queue=0
-function nowServing(KatzDeliLine){
-  queue=++
+let queue = 0;
+function nowServing(queue){
+  queue++
   return queue
 }
 function currentLine(line){
