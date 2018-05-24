@@ -6,14 +6,18 @@ function takeANumber(KatzDeliLine,name) {
   return `Welcome, ${name}. You are number ${number} in line.`
 }
 
+// function nowServing(KatzDeliLine){
+//   if (KatzDeliLine.length===0){
+//     return "There is nobody waiting to be served!"
+//   }
+//   else {
+//     return `Currently serving ${KatzDeliLine.shift()}.`}
+// }
+let queue=0
 function nowServing(KatzDeliLine){
-  if (KatzDeliLine.length===0){
-    return "There is nobody waiting to be served!"
-  }
-  else {
-    return `Currently serving ${KatzDeliLine.shift()}.`}
+  queue=++
+  return queue
 }
-
 function currentLine(line){
   if (line.length===0){
     return "The line is currently empty.";
